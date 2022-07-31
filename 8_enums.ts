@@ -16,3 +16,10 @@ enum Status {
 console.log(Status.InProgress) // 1
 let notStartedStatus: Status = Status.NotStated
 notStartedStatus = Status.Done
+
+enum UserStatus {
+  NotStated = "notStated",
+  InProgress = "inProgress",
+  Done = "done",
+}
+console.log(UserStatus.InProgress) // inProgress
