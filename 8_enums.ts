@@ -23,3 +23,12 @@ enum UserStatus {
   Done = "done",
 }
 console.log(UserStatus.InProgress) // inProgress
+
+enum School {
+  Waterloo = "Waterloo",
+  Harvard = "Harvard",
+  Stanford = "Stanford",
+  Berkely = "Berkely",
+}
+
+console.log(School.Stanford) //Stanford

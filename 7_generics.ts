@@ -24,7 +24,7 @@ interface IUserInterface<T, V> {
  * Generics allow us to provide different data types
  */
 
-const user: IUserInterface<{ meta: string }, string> = {
+const userG: IUserInterface<{ meta: string }, string> = {
   name: "Jack",
   data: {
     meta: "foo",
@@ -32,13 +32,13 @@ const user: IUserInterface<{ meta: string }, string> = {
   meta: "some user",
 }
 
-const user2: IUserInterface<string[], string> = {
+const userG2: IUserInterface<string[], string> = {
   name: "John",
   data: ["foo", "bar"],
   meta: "some user",
 }
 
-const result = addId<IUserInterface<{ meta: string }, string>>(user)
+const result = addId<IUserInterface<{ meta: string }, string>>(userG)
 //<{ meta: string }, string>
 //const result = addId<string>("foo")
 

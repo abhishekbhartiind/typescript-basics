@@ -1,9 +1,9 @@
-interface IUserInterface {
+interface IUserFuncInterface {
   getFullName(): string
 }
 
 // class must implement getFullName(), otherwise throws error
-class User implements IUserInterface {
+class User implements IUserFuncInterface {
   firstName: string
   private lastName: string
   readonly unChangeableName: string
